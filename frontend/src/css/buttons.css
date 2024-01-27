@@ -1,0 +1,57 @@
+/* LOGO */
+
+.site-logo {
+    font-family: 'Pacifico', cursive; 
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #213a3e;
+    transition: 0.8s;
+}
+  
+.site-logo::before {
+    content: "🛍️";
+    font-size: 42px;
+    margin-right: 10px;
+}
+  
+.site-logo:hover {
+    color: #dcdcdc;
+    transition: 0.5s;
+}
+
+/* -------- */
+
+/* Header buttons */
+
+.login-button, 
+.signup-button, 
+.products-button,
+.host-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+  
+.login-button,
+.signup-button, 
+.products-button,
+.host-button {
+    background-color: #333; 
+    color: white;
+}
+  
+.login-button:hover,
+.signup-button:hover,
+.products-button:hover,
+.host-button:hover {
+    background-color: #555; 
+    border-color: #555;
+}
+
+/* -------- */

@@ -1,0 +1,27 @@
+/* Navigation bars */
+
+.host-nav,
+.listing-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #80858a, #dee2e6);
+  padding: 10px;
+}
+
+.host-nav a,
+.listing-nav a {
+  color: rgb(255, 255, 255);
+  background-color: #4e5253;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.host-nav a:hover,
+.listing-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
