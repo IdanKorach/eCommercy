@@ -21,7 +21,7 @@ export default function ListingPricing() {
 
     return (
         <section className="pricing-container">
-            <h1>Pricing</h1>
+            <h1>Pricing </h1>
 
             <div>
                 <p>Price: ${product.price}</p>
