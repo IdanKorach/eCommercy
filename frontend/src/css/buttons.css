@@ -22,12 +22,15 @@
 
 /* -------- */
 
-/* Header buttons */
+/* buttons */
 
 .login-button, 
 .signup-button, 
 .products-button,
-.host-button {
+.host-button,
+.back-button,
+.contact-button,
+.add-to-cart-button {
     padding: 10px 20px;
     margin: 10px;
     border: 1px solid #ccc; 
@@ -36,22 +39,37 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-  
-.login-button,
-.signup-button, 
-.products-button,
-.host-button {
     background-color: #333; 
     color: white;
 }
   
+  
 .login-button:hover,
 .signup-button:hover,
 .products-button:hover,
-.host-button:hover {
+.host-button:hover,
+.back-button:hover,
+.contact-button:hover,
+.add-to-cart-button:hover  {
     background-color: #555; 
     border-color: #555;
+}
+
+.back-button {
+    max-width: fit-content;
+    margin-left: 3px;
+}
+
+.contact-button {
+    background-color: #2ba1a3;
+}
+.add-to-cart-button {
+    background-color: rgb(175, 56, 56);
+} 
+
+.contact-button,
+.add-to-cart-button {
+    margin-left: 0;
 }
 
 /* -------- */

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import products from '../assets/data'; 
+import products from '../assets/data';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -22,13 +22,11 @@ export default function ProductDetail() {
     <>
         <div className='product-details'>
             <h1>{product.name}</h1>
-            <p>Description: {product.description}</p>
+            <p className='product-description'><strong>Description:</strong> {product.description}</p>
             <img src={product.image} alt={product.name} />
             <p>Price: ${product.price}</p>
-        </div>
-        <div>
-            <Link to='/products/:id/contact' >Contact</Link>
-            <button>Add to cart</button>
+            <Link className='contact-button' to='/products/:id/contact' >Contact</Link>
+            <button className='add-to-cart-button'>Add to cart</button>
         </div>
     </>
   );

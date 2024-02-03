@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import products from "../../assets/data";
+import "../../css/pages.css";
 
 export default function ListingDetail() {
     const params = useParams();
@@ -19,12 +20,21 @@ export default function ListingDetail() {
     }
 
     return (
-        <>
-            <div className='product-details'>
-                <h1>Name: {product.name}</h1>
-                <p>Description: {product.description}</p>
-                <img src={product.image} alt={product.name} />
-            </div>
-        </>
+        <section className="listed-product-page">
+          <Link
+            to=".."
+            className="back-button"
+          >&larr; <span>Back to all products</span></Link>
+  
+          <h1 className="product-name">{product.name}</h1>
+          <img src={product.image} alt={product.name} />
+          
+          <div className="item-info">
+            <div>Name: {product.name}</div>
+            <div><strong>Description:</strong> {product.description}</div>
+            <div><strong>Category:</strong> {product.category}</div>
+          </div>
+
+        </section>
     )
 }
